@@ -11,7 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set encoding=utf-8
-set cmdheight=1
+set cmdheight=2
 set cursorline
 
 filetype indent on
@@ -128,7 +128,8 @@ if !has('nvim')
 endif
 let g:LanguageClient_serverCommands = {
     \ 'cpp': ['clangd'],
-    \ 'c': ['clangd']
+    \ 'c': ['clangd'],
+    \ 'python': ['pyls'],
     \ }
 let g:LanguageClient_useVirtualText = 0
 "let g:LanguageClient_hoverPreview = "Never"
