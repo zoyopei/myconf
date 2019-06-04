@@ -127,16 +127,23 @@ if !has('nvim')
   packadd vim-hug-neovim-rpc
 endif
 let g:LanguageClient_serverCommands = {
-    \ 'cpp': ['clangd'],
-    \ 'c': ['clangd'],
-    \ 'python': ['pyls'],
+    \ 'cpp': ['clangd', '--pch-storage=memory'],
+    \ 'c': ['clangd', '--pch-storage=memory'],
+    \ 'python': ['pyls','--log-file','/tmp/pyls.log', '-vvv'],
     \ }
+"    \ 'python': ['pyls','--log-file','/tmp/pyls.log', '-vvv'],
+    "\ 'cpp': ['clangd', '--pch-storage=memory'],
+    "\ 'c': ['clangd', '--pch-storage=memory'],
+let g:LanguageClient_settingsPath='./settings.json'
 let g:LanguageClient_useVirtualText = 0
+"let g:LanguageClient_changeThrottle = 1
 "let g:LanguageClient_hoverPreview = "Never"
 "function SetLSPShortcuts()
 nnoremap <leader>ld :call LanguageClient#textDocument_definition()<CR>
+nnoremap <leader>li :call LanguageClient#textDocument_implementation()<CR>
 nnoremap <leader>ln :call LanguageClient#textDocument_rename()<CR>
 nnoremap <leader>lf :call LanguageClient#textDocument_formatting()<CR>
+vnoremap <leader>lf :call LanguageClient#textDocument_rangeFormatting()<CR>
 nnoremap <leader>lt :call LanguageClient#textDocument_typeDefinition()<CR>
 nnoremap <leader>lr :call LanguageClient#textDocument_references()<CR>
 nnoremap <leader>la :call LanguageClient_workspace_applyEdit()<CR>
