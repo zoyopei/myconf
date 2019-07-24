@@ -41,12 +41,15 @@ inoremap ˚ <Up>
 inoremap ¬ <Right>
 inoremap ∂ <DELETE>
 
+nmap <C-L><C-L> :set invrelativenumber<CR>
+
 nmap ,v "+p
 vmap ,c "+yy
 nmap ,c "+yy
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 
-nmap <C-L><C-L> :set invrelativenumber<CR>
-
+nnoremap <leader>t. :tabedit %<cr>
+nnoremap <leader>tc :tabclose<cr>
 
 call plug#begin()
 
