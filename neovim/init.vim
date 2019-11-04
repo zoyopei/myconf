@@ -188,9 +188,5 @@ set cscopeprg='gtags-cscope'
 Plug 'kana/vim-fakeclip'
 
 "Plug 'davidhalter/jedi-vim'
-"py << EOF
-"sys.path.insert(0, '/home/peizhaoyou/ml_system/pico/tools/ptest')
-"sys.path.insert(0, '/home/peizhaoyou/ml_system/pico/test-common/functiontest/testlib')
-"EOF
 "
 call plug#end()
