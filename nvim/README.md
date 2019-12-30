@@ -13,13 +13,11 @@ pip install neovim pynvim python-language-server pycodestyle pylint
 
 ### install nodejs package
 ```
-npm install -g neovim
-npm install -g bash-language-server
-npm install -g dockerfile-language-server-nodejs
+npm install -g neovim bash-language-server dockerfile-language-server-nodejs
 ```
 
 ### install coc extensions
 ```
-vim -c 'CocInstall -sync coc-json coc-tsserver coc-java coc-python coc-highlight coc-lists coc-git coc-xml coc-vimlsp coc-markdownlint|q'
+nvim -c 'CocInstall -sync coc-json coc-tsserver coc-java coc-python coc-highlight coc-lists coc-git coc-xml coc-vimlsp coc-markdownlint|q'
 ```
 
