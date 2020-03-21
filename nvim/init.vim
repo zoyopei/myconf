@@ -51,8 +51,8 @@ nmap ,c "+yy
 nnoremap <leader>t. :tabedit %<cr>
 nnoremap <leader>tc :tabclose<cr>
 
-let g:python_host_prog = "python2"
-let g:python3_host_prog = "python3"
+"let g:python_host_prog = "python2"
+"let g:python3_host_prog = "python3"
 
 call plug#begin()
 
@@ -115,7 +115,7 @@ let g:cpp_experimental_simple_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 let g:cpp_no_function_highlight = 1
 
-Plug 'sbdchd/neoformat'
+"Plug 'sbdchd/neoformat'
 
 " ctrlsf
 Plug 'dyng/ctrlsf.vim'
@@ -193,7 +193,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
-
+" Remap for coc-format 
+nmap <leader>fa <Plug>(coc-format)
 " Remap for format selected region
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)

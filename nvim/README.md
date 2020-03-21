@@ -8,7 +8,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 ### install python package
 ```
-pip install neovim pynvim python-language-server pycodestyle pylint
+pip install neovim pynvim python-language-server pycodestyle pylint jedi
 ```
 
 ### install nodejs package
