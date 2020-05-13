@@ -51,8 +51,8 @@ nmap ,c "+yy
 nnoremap <leader>t. :tabedit %<cr>
 nnoremap <leader>tc :tabclose<cr>
 
-"let g:python_host_prog = "python2"
-"let g:python3_host_prog = "python3"
+let g:python_host_prog = "~/tools/bin/python2"
+let g:python3_host_prog = "~/tools/bin/python3"
 
 call plug#begin()
 
@@ -308,11 +308,15 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "set completeopt-=preview
 "autocmd CompleteDone * silent! pclose!
 
-"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"Plug 'Shougo/deoplete.nvim'
+"Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 
 Plug 'Shougo/echodoc.vim'
 let g:echodoc#enable_at_startup = 1
 let g:echodoc#type = 'signature'
+
+"Plug 'fatih/vim-go'
 
 " (Optional) Multi-entry selection UI.
 "Plug 'junegunn/fzf'
