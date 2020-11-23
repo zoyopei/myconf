@@ -18,6 +18,7 @@
       "filetypes": ["scala", "sbt"]
     }
   },
+  "yaml.format.enable": true,
   "python.jediEnabled": true,
   "python.linting.enabled": true,
   "python.autoComplete.addBrackets": true,

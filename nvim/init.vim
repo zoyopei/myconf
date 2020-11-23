@@ -329,4 +329,7 @@ set cscopeprg='gtags-cscope'
 
 "Plug 'davidhalter/jedi-vim'
 "
+
+Plug 'chr4/nginx.vim'
+
 call plug#end()
