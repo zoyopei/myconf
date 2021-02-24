@@ -25,5 +25,13 @@
   "python.autoComplete.showAdvancedMembers": false,
   "python.autoComplete.extraPaths": [],
   "python.autoComplete.typeshedPaths": ["/home/peizhaoyou/source/typeshed"],
-  "python.formatting.autopep8Args": ["--aggressive", "--aggressive"]
+  "python.formatting.autopep8Args": ["--aggressive", "--aggressive"],
+  "Lua.runtime.path": [
+    "?.lua",
+    "?/init.lua",
+    "?/?.lua",
+    "/usr/local/openresty/lualib/?.lua",
+    "/usr/local/openresty/lualib/?/?.lua",
+    "/usr/local/openresty/lualib/?/?/?.lua"
+  ] 
 }

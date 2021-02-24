@@ -18,6 +18,6 @@ npm install -g neovim bash-language-server dockerfile-language-server-nodejs
 
 ### install coc extensions
 ```
-nvim -c 'CocInstall -sync coc-json coc-tsserver coc-java coc-python coc-highlight coc-lists coc-git coc-xml coc-vimlsp coc-markdownlint|q'
+nvim -c 'CocInstall -sync coc-json coc-tsserver coc-java coc-python coc-highlight coc-lists coc-git coc-xml coc-vimlsp coc-markdownlint coc-go coc-lua|q'
 ```
 

@@ -13,6 +13,7 @@ set softtabstop=4
 set encoding=utf-8
 set cmdheight=2
 set cursorline
+set maxmempattern=2000
 
 filetype indent on
 filetype plugin indent on
@@ -331,5 +332,7 @@ set cscopeprg='gtags-cscope'
 "
 
 Plug 'chr4/nginx.vim'
+
+Plug 'skywind3000/asyncrun.vim'
 
 call plug#end()
